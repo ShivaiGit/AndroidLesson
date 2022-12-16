@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    android:background="#00B309"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="UseSwitchCompatOrMaterialXml">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="109dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        android:text="@string/btnText"
+        android:layout_marginTop="26dp"
+        android:background="#2196F3"
+        android:backgroundTint="#001925"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/etText"
+        android:textColor="#212121"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,15 +29,69 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
         android:autofillHints=""
         android:ems="10"
+        android:fontFamily="cursive"
+        android:gravity="center"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/ptText"
+        android:text="@string/name"
+        android:textColor="#3E2723"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FA8C03"
+        android:fontFamily="monospace"
+        android:text="@string/btnText"
+        android:textColor="#4E342E"
+        android:textColorHighlight="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#0B45F1"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/switchTxt"
         app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="serif"
+        android:text="@string/checkbox"
+        app:layout_constraintEnd_toEndOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#000000"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/toggleButton"
+        android:textColor="#FAF5F5"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+</LinearLayout>

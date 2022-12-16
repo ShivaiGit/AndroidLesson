@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="btnText">Кнопка</string>
-    <string name="tvText">Текст</string>
-    <string name="ptText">Ввод текста</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="toggleButton">toggleButton</string>
+    <string name="switchTxt">Switch</string>
+    <string name="name">Name</string>
+    <string name="textView">TextView</string>
+    <string name="etText">Введите текст</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="password">Password</string>
+    <string name="number">Number</string>
+    <string name="person_name">Person name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
 </resources>
