@@ -1,67 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editText1"
+    <Button
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/etEnterText1"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:textColorHint="#78909C"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor" />
+        android:textSize="@dimen/btn_text_size"
+        android:text="@string/_1" />
 
-
-    <EditText
-        android:id="@+id/editText2"
+    <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/etEnterText2"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:textColorHint="#78909C"
-        app:layout_constraintEnd_toEndOf="@+id/editText1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText1"
-        app:layout_constraintTop_toBottomOf="@+id/editText1"
-        tools:ignore="LabelFor" />
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/btn_text_size"
+        android:text="@string/_2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textSize="@dimen/btn_text_size"
+        android:text="@string/_3" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="@string/btnEquals"
-        app:layout_constraintEnd_toEndOf="@+id/editText1"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/editText1"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/btn_text_size"
+        android:text="@string/_4" />
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="@string/tvResult"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        android:layout_gravity="center"
+        android:textSize="@dimen/btn_text_size"
+        android:text="@string/_5" />
 
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:textSize="@dimen/btn_text_size"
+        android:text="@string/_6" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textSize="@dimen/btn_text_size"
+        android:text="@string/_7" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textSize="@dimen/btn_text_size"
+        android:text="@string/_8" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:textSize="@dimen/btn_text_size"
+        android:text="@string/_9" />
+</FrameLayout>
 
