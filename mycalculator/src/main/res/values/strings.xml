@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">calculator</string>
+    <string name="etEnterText1">Введите первое число</string>
+    <string name="etEnterText2">Введите второе число</string>
+    <string name="btnEquals">Проверить на равенство</string>
+    <string name="tvResult">Тут будет ответ</string>
 </resources>
