@@ -181,7 +181,7 @@
         android:id="@+id/button_result"
         android:layout_width="0dp"
         android:layout_height="@dimen/btn_size"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="300dp"
         android:text="@string/result"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintBottom_toTopOf="@+id/button_8"
