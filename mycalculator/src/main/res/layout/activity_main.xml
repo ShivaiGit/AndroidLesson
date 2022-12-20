@@ -49,7 +49,7 @@
         android:layout_height="@dimen/btn_size"
         android:text="@string/_3"
         android:textSize="@dimen/btn_text_size"
-        app:layout_constraintBottom_toTopOf="@+id/button_delete"
+        app:layout_constraintBottom_toTopOf="@+id/button_result"
         app:layout_constraintEnd_toEndOf="@+id/button_6"
         app:layout_constraintStart_toStartOf="@+id/button_6"
         app:layout_constraintTop_toBottomOf="@id/button_6" />
@@ -206,21 +206,9 @@
         android:text="@string/result"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button_2"
+        app:layout_constraintEnd_toEndOf="@+id/button_3"
         app:layout_constraintStart_toStartOf="@+id/button_1"
         app:layout_constraintTop_toBottomOf="@+id/button_1" />
-
-    <Button
-        android:id="@+id/button_delete"
-        android:layout_width="@dimen/btn_size"
-        android:layout_height="@dimen/btn_size"
-        android:layout_marginBottom="90dp"
-        android:text="@string/delete"
-        android:textSize="@dimen/btn_text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button_3"
-        app:layout_constraintStart_toStartOf="@+id/button_3"
-        app:layout_constraintTop_toBottomOf="@+id/button_3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
