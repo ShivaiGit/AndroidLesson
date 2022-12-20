@@ -18,5 +18,6 @@
     <string name="clear">С</string>
     <string name="delete">d</string>
     <string name="result">=</string>
+    <string name="percent">%</string>
 
 </resources>
