@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingStart="20dp"
-
+    android:background="@drawable/back"
     tools:context=".MainActivity">
 
 
@@ -181,7 +181,7 @@
         android:id="@+id/button_result"
         android:layout_width="0dp"
         android:layout_height="@dimen/btn_size"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="250dp"
         android:text="@string/result"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintBottom_toTopOf="@+id/button_8"
