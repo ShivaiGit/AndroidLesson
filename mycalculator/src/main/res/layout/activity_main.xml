@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,15 +9,15 @@
     android:background="@drawable/back"
     tools:context=".MainActivity">
 
-
     <Button
         android:id="@+id/button_7"
         android:layout_width="@dimen/btn_size"
         android:layout_height="@dimen/btn_size"
         android:text="@string/_7"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
-        app:layout_constraintStart_toStartOf="@id/button_result"
         app:layout_constraintEnd_toStartOf="@+id/button_8"
+        app:layout_constraintStart_toStartOf="@id/button_result"
         app:layout_constraintTop_toBottomOf="@+id/button_result" />
 
     <Button
@@ -25,6 +26,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/_5"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintStart_toEndOf="@+id/button_4"
         app:layout_constraintTop_toBottomOf="@+id/button_8" />
@@ -34,6 +36,7 @@
         android:layout_width="@dimen/btn_size"
         android:layout_height="@dimen/btn_size"
         android:text="@string/_4"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintEnd_toEndOf="@+id/button_7"
         app:layout_constraintStart_toStartOf="@+id/button_7"
@@ -45,6 +48,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/_9"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintEnd_toStartOf="@+id/button_plus"
         app:layout_constraintStart_toEndOf="@+id/button_8"
@@ -56,6 +60,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/_3"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintStart_toEndOf="@+id/button_2"
         app:layout_constraintTop_toBottomOf="@+id/button_6" />
@@ -66,6 +71,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/_0"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintEnd_toEndOf="@+id/button_2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -77,11 +83,13 @@
         android:layout_width="@dimen/btn_size"
         android:layout_height="@dimen/btn_size"
         android:text="@string/dot"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintEnd_toEndOf="@+id/button_1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/button_1"
-        app:layout_constraintTop_toBottomOf="@+id/button_1" />
+        app:layout_constraintTop_toBottomOf="@+id/button_1"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button_2"
@@ -89,6 +97,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/_2"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintStart_toEndOf="@+id/button_1"
         app:layout_constraintTop_toBottomOf="@+id/button_5" />
@@ -99,6 +108,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/_6"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintStart_toEndOf="@+id/button_5"
         app:layout_constraintTop_toBottomOf="@+id/button_9" />
@@ -108,10 +118,12 @@
         android:layout_width="@dimen/btn_size"
         android:layout_height="@dimen/btn_size"
         android:text="@string/_1"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintEnd_toEndOf="@+id/button_4"
         app:layout_constraintStart_toStartOf="@+id/button_4"
-        app:layout_constraintTop_toBottomOf="@+id/button_4" />
+        app:layout_constraintTop_toBottomOf="@+id/button_4"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button_8"
@@ -119,6 +131,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/_8"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintEnd_toStartOf="@+id/button_9"
         app:layout_constraintStart_toEndOf="@+id/button_7"
@@ -130,6 +143,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/clear"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintEnd_toEndOf="@+id/button_3"
         app:layout_constraintStart_toEndOf="@+id/button_0"
@@ -141,6 +155,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/plus"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintStart_toEndOf="@+id/button_9"
         app:layout_constraintTop_toTopOf="@+id/button_9" />
@@ -151,6 +166,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/minus"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintStart_toEndOf="@+id/button_6"
         app:layout_constraintTop_toBottomOf="@+id/button_plus" />
@@ -161,10 +177,12 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/multi"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintEnd_toEndOf="@+id/button_minus"
         app:layout_constraintStart_toEndOf="@+id/button_3"
-        app:layout_constraintTop_toBottomOf="@+id/button_minus" />
+        app:layout_constraintTop_toBottomOf="@+id/button_minus"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button_div"
@@ -172,10 +190,12 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/div"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintEnd_toEndOf="@+id/button_multi"
         app:layout_constraintStart_toEndOf="@+id/button_clear"
-        app:layout_constraintTop_toBottomOf="@+id/button_multi" />
+        app:layout_constraintTop_toBottomOf="@+id/button_multi"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button_result"
@@ -183,6 +203,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginTop="250dp"
         android:text="@string/result"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintBottom_toTopOf="@+id/button_8"
         app:layout_constraintEnd_toEndOf="@+id/button_8"
@@ -195,6 +216,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/delete"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintStart_toEndOf="@+id/button_result"
         app:layout_constraintTop_toTopOf="@+id/button_result" />
@@ -205,6 +227,7 @@
         android:layout_height="@dimen/btn_size"
         android:layout_marginStart="10dp"
         android:text="@string/percent"
+        android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintStart_toEndOf="@+id/button_del"
         app:layout_constraintTop_toTopOf="@+id/button_del" />
