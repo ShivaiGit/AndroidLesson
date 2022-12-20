@@ -16,7 +16,7 @@
     <string name="multi">*</string>
     <string name="div">/</string>
     <string name="clear">С</string>
-    <string name="delete"> d </string>
+    <string name="delete">d</string>
     <string name="result">=</string>
 
 </resources>
