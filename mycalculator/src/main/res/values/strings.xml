@@ -19,5 +19,8 @@
     <string name="delete">d</string>
     <string name="result">=</string>
     <string name="percent">%</string>
+    <string name="tv_enter">Ввод</string>
+    <string name="tv_result">Вывод</string>
+
 
 </resources>

@@ -5,10 +5,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingStart="20dp"
     android:background="@color/teal_200"
-    tools:context=".MainActivity">
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    tools:context=".CalculatorActivity">
 
+    <TextView
+        android:id="@+id/enter"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_size"
+        android:layout_marginBottom="64dp"
+        android:gravity="end|center"
+        android:hint="@string/tv_enter"
+        android:textSize="@dimen/tv_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/button_clear"
+        app:layout_constraintEnd_toEndOf="@+id/button_clear"
+        app:layout_constraintStart_toStartOf="@+id/button_result" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="end|center"
+        android:textSize="@dimen/tv_text_size"
+        app:layout_constraintBottom_toTopOf="@id/enter"
+        app:layout_constraintEnd_toEndOf="@id/enter"
+        app:layout_constraintStart_toStartOf="@id/enter" />
 
     <Button
         android:id="@+id/button_7"
@@ -149,6 +172,7 @@
         android:text="@string/plus"
         android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/button_minus"
         app:layout_constraintStart_toEndOf="@+id/button_9"
         app:layout_constraintTop_toTopOf="@+id/button_9" />
 
@@ -160,6 +184,7 @@
         android:text="@string/minus"
         android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/button_multi"
         app:layout_constraintStart_toEndOf="@+id/button_6"
         app:layout_constraintTop_toBottomOf="@+id/button_plus" />
 
@@ -171,7 +196,7 @@
         android:text="@string/multi"
         android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
-        app:layout_constraintEnd_toEndOf="@+id/button_minus"
+        app:layout_constraintEnd_toEndOf="@+id/button_div"
         app:layout_constraintStart_toEndOf="@+id/button_3"
         app:layout_constraintTop_toBottomOf="@+id/button_minus"
         tools:ignore="TextContrastCheck" />
@@ -184,7 +209,6 @@
         android:text="@string/div"
         android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
-        app:layout_constraintEnd_toEndOf="@+id/button_multi"
         app:layout_constraintStart_toEndOf="@+id/button_0"
         app:layout_constraintTop_toBottomOf="@+id/button_multi"
         tools:ignore="TextContrastCheck" />
@@ -193,7 +217,7 @@
         android:id="@+id/button_result"
         android:layout_width="0dp"
         android:layout_height="@dimen/btn_size"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="360dp"
         android:text="@string/result"
         android:textColor="#000000"
         android:textSize="@dimen/btn_text_size"
@@ -201,6 +225,7 @@
         app:layout_constraintEnd_toEndOf="@+id/button_8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
