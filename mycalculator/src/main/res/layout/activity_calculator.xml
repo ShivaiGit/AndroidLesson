@@ -8,7 +8,7 @@
     android:background="@color/teal_200"
     android:paddingStart="20dp"
     android:paddingEnd="20dp"
-    tools:context=".CalculatorActivity">
+    tools:context=".ui.CalculatorActivity">
 
     <TextView
         android:id="@+id/enter"
