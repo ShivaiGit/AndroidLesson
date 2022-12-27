@@ -40,6 +40,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 textView.setText((textView.getText() + "+"));
             }
         });
+
         btnMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,6 +48,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 textView.setText((textView.getText() + "-"));
             }
         });
+
         btnMulti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,6 +56,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 textView.setText((textView.getText() + "*"));
             }
         });
+
         btnDiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
