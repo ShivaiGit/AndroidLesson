@@ -1,5 +1,6 @@
 package ru.osmanov.mycalculator;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ public class CalculatorActivity extends AppCompatActivity {
     private double value1, value2;
     private String operator;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,40 +33,62 @@ public class CalculatorActivity extends AppCompatActivity {
         btn8.setOnClickListener(view -> textView.setText(textView.getText() + "8"));
         btn9.setOnClickListener(view -> textView.setText(textView.getText() + "9"));
         btnDot.setOnClickListener(view -> textView.setText((textView.getText() + ".")));
-        btnClear.setOnClickListener(view -> textView.setText(""));
 
-        btnPlus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                operator = "+";
-                textView.setText((textView.getText() + "+"));
-            }
+        btnClear.setOnClickListener(view -> {
+            value1 = 0.0;
+            value2 = 0.0;
+            textView.setText("");
         });
 
-        btnMinus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                operator = "-";
-                textView.setText((textView.getText() + "-"));
-            }
+        btnPlus.setOnClickListener(view -> {
+            operator = "\\+";
+            textView.setText(textView.getText() + " + ");
         });
 
-        btnMulti.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                operator = "*";
-                textView.setText((textView.getText() + "*"));
-            }
+        btnMinus.setOnClickListener(view -> {
+            operator = "-";
+            textView.setText(textView.getText() + " - ");
         });
 
-        btnDiv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                operator = "/";
-                textView.setText((textView.getText() + "/"));
-            }
+        btnMulti.setOnClickListener(view -> {
+            operator = "\\*";
+            textView.setText(textView.getText() + " * ");
         });
 
+        btnDiv.setOnClickListener(view -> {
+            operator = "/";
+            textView.setText(textView.getText() + " / ");
+        });
+
+        btnResult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                double result = 0;
+                String splitValueOfTextView = textView.getText().toString();
+                String[] arr = splitValueOfTextView.split(operator);
+                value1 = Double.parseDouble(arr[0]);
+                value2 = Double.parseDouble(arr[1]);
+                try {
+                    switch (operator) {
+                        case ("\\+"):
+                            result = value1 + value2;
+                            break;
+                        case ("-"):
+                            result = value1 - value2;
+                            break;
+                        case ("\\*"):
+                            result = value1 * value2;
+                            break;
+                        case ("/"):
+                            result = value1 / value2;
+                            break;
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                textView.setText(" = " + result);
+            }
+        });
     }
 
     private void initView() {
@@ -86,7 +110,5 @@ public class CalculatorActivity extends AppCompatActivity {
         btnClear = findViewById(R.id.button_clear);
         btnResult = findViewById(R.id.button_result);
         textView = findViewById(R.id.tv_result);
-
     }
-
 }
