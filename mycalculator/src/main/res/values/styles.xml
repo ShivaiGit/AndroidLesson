@@ -7,4 +7,7 @@
         <item name="android:textColor">@color/btn_text_black</item>
         <item name="android:textSize">@dimen/btn_text_size</item>
     </style>
+    <style name="Button_calc_primary" parent="Button_calc">
+        <item name="android:layout_marginStart">@dimen/btn_marginStart</item>
+    </style>
 </resources>
