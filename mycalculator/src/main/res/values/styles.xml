@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Button_calc">
+        <item name="android:layout_width">@dimen/btn_size</item>
+        <item name="android:layout_height">@dimen/btn_size</item>
+        <item name="android:textColor">@color/btn_text_black</item>
+        <item name="android:textSize">@dimen/btn_text_size</item>
+    </style>
+</resources>
