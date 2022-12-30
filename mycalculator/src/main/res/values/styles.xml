@@ -11,4 +11,7 @@
     <style name="Button_calc_primary" parent="Button_calc">
         <item name="android:layout_marginStart">@dimen/btn_marginStart</item>
     </style>
+    <style name="Button_calc_second" parent="Button_calc">
+        <item name="android:layout_width">0dp</item>
+    </style>
 </resources>

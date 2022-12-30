@@ -59,15 +59,12 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_0"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/btn_size"
         android:text="@string/_0"
-        android:textColor="@color/btn_text_black"
-        android:textSize="@dimen/btn_text_size"
         app:layout_constraintEnd_toEndOf="@+id/button_3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/button_2"
-        app:layout_constraintTop_toBottomOf="@+id/button_2" />
+        app:layout_constraintTop_toBottomOf="@+id/button_2"
+        style="@style/Button_calc_second"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_dot"
@@ -108,14 +105,11 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_clear"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/btn_size"
         android:text="@string/clear"
-        android:textColor="@color/btn_text_black"
-        android:textSize="@dimen/btn_text_size"
         app:layout_constraintEnd_toEndOf="@+id/button_plus"
         app:layout_constraintStart_toStartOf="@+id/button_9"
-        app:layout_constraintTop_toTopOf="@+id/button_result" />
+        app:layout_constraintTop_toTopOf="@+id/button_result"
+        style="@style/Button_calc_second"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_plus"
@@ -152,16 +146,13 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_result"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/btn_size"
         android:layout_marginTop="360dp"
         android:text="@string/result"
-        android:textColor="@color/btn_text_black"
-        android:textSize="@dimen/btn_text_size"
         app:layout_constraintBottom_toTopOf="@+id/button_8"
         app:layout_constraintEnd_toEndOf="@+id/button_8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Button_calc_second"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

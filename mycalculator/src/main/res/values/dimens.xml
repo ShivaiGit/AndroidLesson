@@ -5,6 +5,6 @@
     <dimen name="tv_text_size">50sp</dimen>
     <dimen name="btn_size">80dp</dimen>
     <dimen name="btn_marginStart">10dp</dimen>
-    <dimen name="btn_cornerRadius">10dp</dimen>
+    <dimen name="btn_cornerRadius">20dp</dimen>
 
 </resources>
