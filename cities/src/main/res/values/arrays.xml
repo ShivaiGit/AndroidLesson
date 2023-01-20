@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>Махачкала</item>
+        <item>Дербент</item>
+        <item>Каспийск</item>
+        <item>Избербаш</item>
+        <item>Кизляр</item>
+    </string-array>
+</resources>
